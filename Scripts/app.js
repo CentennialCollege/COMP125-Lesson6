@@ -79,6 +79,24 @@
      */
     function About() {
         InitialText();
+
+        window.alert("Hello World!");
+
+        console.log("InnerWidth: " + window.innerWidth);
+        console.log("InnerHeight: " + window.innerHeight);
+        console.log("OuterWidth: " + window.outerWidth);
+        console.log("OuterHeight: " + window.outerHeight);
+        console.log("Location: " + window.location);
+        console.log("Navigator appName: " + window.navigator.appName);
+        console.log("Navigator appCodeName: " + window.navigator.appCodeName);
+        console.log("Navigator appVersion: " + window.navigator.appVersion);
+
+       window.navigator.geolocation.getCurrentPosition(function(location){
+            console.log("Latitude: " + location.coords.latitude);
+            console.log("Longitude: " + location.coords.longitude);
+        });
+
+        
     }
     
      /**
